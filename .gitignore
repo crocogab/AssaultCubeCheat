@@ -1,0 +1,24 @@
+# Dossier de configuration VS Code
+.vscode/
+
+# Dossier profile
+profile/
+
+# Dossiers obj (partout dans le projet)
+obj/
+**/obj/
+
+# Fichiers objets individuels (sécurité)
+*.o
+
+# Exécutables
+main
+cheat
+overlay
+
+# Fichiers temporaires
+*~
+*.tmp
+
+# Fichiers de debug
+*.dSYM/
