@@ -7,6 +7,6 @@ int find_pid_by_name(const char* process_name);
 int read_int(int mem_fd, unsigned long addr);
 float read_float(int mem_fd, unsigned long addr);
 void write_int(int mem_fd, unsigned long addr, int value) ;
-void write_float(int mem_fd, unsigned long addr, float value) ;
+void write_float(int mem_fd, unsigned long addr, float value);
 
 #endif

@@ -14,7 +14,7 @@ typedef struct {
 
 typedef struct 
 {
-   double x,y 
+   double x,y; 
 }Vec2;
 
 

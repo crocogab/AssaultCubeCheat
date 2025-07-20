@@ -78,6 +78,5 @@ bool isLookingAt(Vec3 playerPos, double yawDeg, double pitchDeg, Vec3 targetPos)
     double cosAngle = dot(dirToTarget, viewDir);
     double angleDeg = acos(cosAngle) * 180.0 / M_PI;
     
-    
     return angleDeg <= TOLERANCE_DEGREES;
 }

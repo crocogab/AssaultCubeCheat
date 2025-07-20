@@ -1,3 +1,4 @@
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -32,7 +33,7 @@ int mouse_status(int fd){
 }
 
 
-int main(){
+int main(void){
     int pid = find_pid_by_name(game_name);
 
     
@@ -120,10 +121,9 @@ int main(){
             
         }
         //printf("PLAYER x = %f y= %f z= %f\n",player_vector.x,player_vector.y,player_vector.z);
-        sleep(0.5);
+        sleep(1); // 1 second - will improve this later
     }
     
-
     close(fd);
     return 0;
 }
