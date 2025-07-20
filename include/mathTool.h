@@ -19,6 +19,7 @@ typedef struct
 
 
 // Fonctions
+double distance3D(Vec3 a, Vec3 b);
 Vec3 normalize(Vec3 v);
 double dot(Vec3 a, Vec3 b);
 Vec3 getDirectionVector(double yawDeg, double pitchDeg);

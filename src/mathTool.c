@@ -3,9 +3,13 @@
 #include <stdbool.h>
 #include "mathTool.h"
 
-
-
-
+// Calculate 3D distance between two points
+double distance3D(Vec3 a, Vec3 b) {
+    double dx = a.x - b.x;
+    double dy = a.y - b.y;
+    double dz = a.z - b.z;
+    return sqrt(dx*dx + dy*dy + dz*dz);
+}
 
 // Normalise un vecteur
 Vec3 normalize(Vec3 v) {

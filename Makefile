@@ -49,10 +49,24 @@ cheat: $(CHEAT_OBJ) $(MEMORY_OBJ) $(MATH_TOOL_OBJ)
 
 # Règles d'exécution
 run: main
+	@echo "Running memory debug tool..."
 	./main
 
 run_cheat: cheat
+	@echo "Starting aimbot..."
 	./cheat
+
+# Help target
+help:
+	@echo "Available targets:"
+	@echo "  all       - Build both executables"
+	@echo "  cheat     - Build aimbot only"
+	@echo "  main      - Build debug tool only"
+	@echo "  run       - Run debug tool"
+	@echo "  run_cheat - Run aimbot"
+	@echo "  clean     - Remove build artifacts"
+	@echo "  info      - Show project structure"
+	@echo "  help      - Show this help"
 
 # Nettoyage
 clean:
@@ -72,4 +86,4 @@ info:
 	@echo "└── cheat        (exécutable)"
 
 # Règles pour forcer la recompilation
-.PHONY: all clean distclean run run_cheat info
+.PHONY: all clean distclean run run_cheat info help
